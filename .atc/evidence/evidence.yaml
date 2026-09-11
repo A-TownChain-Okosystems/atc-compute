@@ -6,7 +6,7 @@ schema_version: "1.0.0"
 repository: atc-compute
 generated: "2026-09-10"
 generated_by: "SCR-0080 Enforcement-Welle (Aurora, Owner-P0-Definition 10.09. 12:21)"
-bound_commit: 2476e66b83306b108d950ea91dca018450f76435
+bound_commit: 4c3eca71867caaae6cd6d001e0fc3206411f1527
 maturity_class: B          # A=substanziell B=Rebuild/Produkt C=Plattform/Anwendung
 r_level: null
 implementation:
@@ -29,8 +29,8 @@ canonical_role:                  # SCR-0080 P0-02: Single-Owner-per-Capability
   canonical: true
 test_run:
   workflow: ATC Test Suite
-  run_id: 34607746086
-  commit: 2476e66b83306b108d950ea91dca018450f76435
-  timestamp: 2026-09-11T14:03:41.390043+00:00
+  run_id: 34617338902
+  commit: 4c3eca71867caaae6cd6d001e0fc3206411f1527
+  timestamp: 2026-09-11T15:39:02.292687+00:00
   result: PASS
   runner: github-actions
