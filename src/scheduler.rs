@@ -22,7 +22,12 @@ pub struct Scheduler {
 
 impl Scheduler {
     pub fn new(max_slots: u32) -> Self {
-        Scheduler { max_slots, free_slots: max_slots, queue: Vec::new(), running: Vec::new() }
+        Scheduler {
+            max_slots,
+            free_slots: max_slots,
+            queue: Vec::new(),
+            running: Vec::new(),
+        }
     }
 
     pub fn enqueue(&mut self, job: Job) {
