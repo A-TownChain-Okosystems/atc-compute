@@ -134,7 +134,10 @@ mod tests {
         assert_eq!(scheduler.enqueue(Job { id: 3, slots: 1 }), Ok(()));
 
         let started = scheduler.dispatch();
-        assert_eq!(started, vec![Job { id: 1, slots: 2 }, Job { id: 2, slots: 2 }]);
+        assert_eq!(
+            started,
+            vec![Job { id: 1, slots: 2 }, Job { id: 2, slots: 2 }]
+        );
         assert_eq!(scheduler.free_slots(), 0);
         assert_eq!(scheduler.running_jobs(), 2);
         assert_eq!(scheduler.queued_jobs(), 1);
